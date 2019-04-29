@@ -1,0 +1,39 @@
+<!doctype html>
+<head>
+	<meta charset="UTF-8" />
+	<!-- 设置缓存时长 0不缓存-->
+	<meta http-equiv="Cache-Control" content="max-age=0" />
+	<title></title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		
+	</style>
+</head>
+<body>
+<svg
+  id="mysvg"
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 800 600"
+  preserveAspectRatio="xMidYMid meet"
+>
+  <circle id="mycircle" cx="400" cy="300" r="50" />
+<svg>
+
+
+	
+	<script src="jquery-1.11.3.js"></script>
+	
+	<script>
+		var mycircle = document.getElementById('mycircle');
+
+
+mycircle.addEventListener('click', function(e) {
+  console.log('circle clicked - enlarging');
+  mycircle.setAttribute('r', 60);
+}, false);
+		
+	</script>
+</body>
